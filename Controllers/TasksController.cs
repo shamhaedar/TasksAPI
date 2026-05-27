@@ -37,6 +37,31 @@ namespace TasksAPI.Controllers
             }
             return Ok(task);
         }
+        [HttpPut("{id}")]
+        public IActionResult UpdateTask([FromRoute]int id, [FromBody] TaskItem updatedTask)
+        {
+            var task = tasks.FirstOrDefault(t => t.Id == id);
+            if(task == null)
+            {
+                return NotFound($"Task with id {id} not found.");
+            }
+            task.Title = updatedTask.Title;
+            task.Description = updatedTask.Description;
+            task.IsCompleted = updatedTask.IsCompleted;
+            return Ok (task);
+        }
+        [HttpDelete("{id}")]
+        public IActionResult DeleteTask([FromRoute]int id)
+        {
+            var task = tasks.FirstOrDefault(t => t.Id == id);
+            if(task == null)
+            {
+                return NotFound($"Task with id {id} not found.");
+            }
+            tasks.Remove(task);
+            return NoContent();
+        }
+         
 
     }
 }
