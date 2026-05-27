@@ -34,3 +34,4 @@ C:\Users\ACER\Desktop\TasksAPI\obj\Debug\net10.0\ref\TasksAPI.dll
 C:\Users\ACER\Desktop\TasksAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\ACER\Desktop\TasksAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ACER\Desktop\TasksAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ACER\Desktop\TasksAPI\obj\Debug\net10.0\TasksAPI.sourcelink.json
