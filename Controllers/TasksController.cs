@@ -19,6 +19,14 @@ namespace TasksAPI.Controllers
         {
             return Ok(tasks);
         }
+        [HttpPost]
+        public IActionResult CreateTask([FromBody]TaskItem newTask)
+        {
+            newTask.Id = tasks.Count + 1;
+            newTask.CreatedAt = DateTime.Now;
+            tasks.Add(newTask);
+            return CreatedAtAction(nameof(GetAllTasks), new { id = newTask.Id }, newTask);
+        }
 
     }
 }
