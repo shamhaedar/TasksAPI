@@ -27,6 +27,16 @@ namespace TasksAPI.Controllers
             tasks.Add(newTask);
             return CreatedAtAction(nameof(GetAllTasks), new { id = newTask.Id }, newTask);
         }
+        [HttpGet("{id}")]
+        public IActionResult GetTaskById([FromRoute]int id)
+        {
+            var task = tasks.FirstOrDefault(t => t.Id == id);
+            if(task == null)
+            {
+                return NotFound($"Task with id {id} not found.");
+            }
+            return Ok(task);
+        }
 
     }
 }
