@@ -9,6 +9,7 @@ namespace TasksAPI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public  string Title { get; set; } = string.Empty;
+        public string priority {get; set;}="Medium";
         public  string Description { get; set; } = string.Empty;
 
         public bool IsCompleted { get; set; }= false;
