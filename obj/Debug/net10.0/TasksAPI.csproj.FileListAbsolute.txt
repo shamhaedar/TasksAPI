@@ -76,3 +76,5 @@ C:\Users\ACER\Desktop\TasksAPI\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microso
 C:\Users\ACER\Desktop\TasksAPI\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ACER\Desktop\TasksAPI\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ACER\Desktop\TasksAPI\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ACER\Desktop\TasksAPI\bin\Debug\net10.0\frontend\package-lock.json
+C:\Users\ACER\Desktop\TasksAPI\bin\Debug\net10.0\frontend\package.json

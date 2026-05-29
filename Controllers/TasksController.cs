@@ -49,6 +49,8 @@ namespace TasksAPI.Controllers
             task.Title = updatedTask.Title;
             task.Description = updatedTask.Description;
             task.IsCompleted = updatedTask.IsCompleted;
+            task.priority = updatedTask.priority;
+            _context.SaveChanges();
             return Ok (task);
         }
         [HttpDelete("{id}")]
