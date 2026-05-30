@@ -15,8 +15,8 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader();
     });
 });
-builder.Services.AddDbContext<TaskContext>(options =>
-    options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=TasksDB;Trusted_Connection=True;"));
+ builder.Services.AddDbContext<TaskContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

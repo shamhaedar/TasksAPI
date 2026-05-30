@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[10.0.8, )"
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[10.1.7, )"
