@@ -1,0 +1,12 @@
+# .NET Core outputs
+bin/
+obj/
+
+# Node modules (Frontend)
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
